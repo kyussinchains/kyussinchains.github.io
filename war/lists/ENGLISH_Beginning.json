@@ -2,34 +2,40 @@
    "id": "English - Beginning of War (First Half)",
    "version": "V1.0",
    "by": "Kyussinchains",
-   "notes":["1) If Using Rhinos you must take exactly enough to carry all units in the formation after any upgrades have been added, to a maximum of 3. 2) 1 Dreadclaw must be purchased per unit in the formation. 3) both Rhinos and Dreadclaws count towards the upgrade allowance of a formation"],
+   
    "sections": [
-      {"name": "CHARACTER", "formations": [
-            {"id": 501, "name": "Emperors Children Retinue", "pts": 275, "upgrades": [52,53,64,65,66,22,71,72,56,57,69,70,63,67,68,60,62,58]},
-            {"id": 552, "name": "Daemon Pool", "pts": 0, "upgrades": [50,51]}
+      {"name": "CHARACTERS", "choices": [
+            {"id": 501, "name": "Captal De Buch", "pts": 285, "upgrades": []},
+	      {"id": 502, "name": "Sir John Jouel", "pts": 205, "upgrades": []},
+	      {"id": 503, "name": "The Black Prince", "pts": 300, "upgrades": []},
+	      {"id": 504, "name": "Mounted Black Prince", "pts": 435, "upgrades": []},
+	      {"id": 505, "name": "John Chandos", "pts": 290, "upgrades": []},
+	      {"id": 506, "name": "Edward III", "pts": 385, "upgrades": []},	     
+            {"id": 507, "name": "Hero", "pts": 160, "upgrades": []}
          ]},
 	  {"name": "TROOP", "formations": [
-            {"id": 503, "name": "Terminators", "pts": 400, "units": "4 Terminators", "upgrades": [52,56,57,69,70,63,67,68,60,53,64,65,66]},
-            {"id": 551, "name": "Bike Company", "pts": 300, "units": "6 Emperors Children Bikes", "upgrades": [56]}
+            {"id": 510, "name": "Light Cavalry", "pts": 120, "upgrades": []},
+            {"id": 511, "name": "Mounted Bowmen", "pts": 130, "upgrades": []},
+	    {"id": 512, "name": "Hunting Dogs", "pts": 75, "upgrades": []},
+	    {"id": 513, "name": "Bowmen", "pts": 125, "upgrades": []},
+            {"id": 514, "name": "Pikemen", "pts": 60, "upgrades": []},
+	    {"id": 515, "name": "Provincial Militia", "pts": 35 "upgrades": []},
+		  {"id": 516, "name": "Foot Knights - 2-handed weapons", "pts": 145 "upgrades": []},
+		  {"id": 517, "name": "Foot Knights", "pts": 165 "upgrades": []},
+		  {"id": 518, "name": "Sergeants at arms - Gascons and Bretons", "pts": 125 "upgrades": []},
+		  {"id": 519, "name": "Standard Bearer", "pts": 230 "upgrades": []},
+		  {"id": 520, "name": "Musician", "pts": 200 "upgrades": []}
          ]}, 
-      {"name": "SUPPORT", "formations": [
-            {"id": 506, "name": "Defiler Pack", "pts": 275, "units": "4 Defilers", "upgrades": [63,67,68]},
-            {"id": 508, "name": "Chaos Space Marines", "pts": 250, "units": "6 Chaos Marines, 3 Rhinos", "upgrades": [56]},
-            {"id": 509, "name": "Armoured Company", "pts": 0, "upgrades": [28,29,57,69,70,22,71,72]},
-            {"id": 510, "name": "Daemonic Knights", "pts": 300, "units": "4 Daemon Knights", "upgrades": []}
-         ]},
-      {"name": "CHAOS TITANS", "formations": [
-            {"id": 520, "name": "Painlord Titan", "pts": 800, "upgrades": []},
-            {"id": 521, "name": "Reviler Titan", "pts": 650, "upgrades": []},
-            {"id": 522, "name": "Questor Titan", "pts": 275, "upgrades": []},
-            {"id": 523, "name": "Subjugator Titan", "pts": 225, "upgrades": []}
-         ]},
-      {"name": "CHAOS NAVY", "formations": [
-            {"id": 530, "name": "Hellblade Flight", "pts": 200, "units": "3 Fighters", "upgrades": []},
-            {"id": 531, "name": "Helltalon Flight", "pts": 225, "units": "2 Bombers", "upgrades": []},
-            {"id": 533, "name": "Devastation Class Cruiser", "pts": 150, "upgrades": []},
-            {"id": 534, "name": "Despoiler Class Battleship", "pts": 250, "upgrades": []}
+      {"name": "RESOURCES", "choices": [
+            {"id": 530, "name": "Order", "pts": 95,  "upgrades": []},
+            {"id": 531, "name": "Charge Order", "pts": 110,  "upgrades": []},
+            {"id": 532, "name": "Interrupt Order", "pts": 120, "upgrades": []},
+            {"id": 533, "name": "Reactivation Order", "pts": 140,  "upgrades": []},
+	      {"id": 534, "name": "Legend Card", "pts": 20,  "upgrades": []},
+	      {"id": 535, "name": "Legend Token", "pts": 20, "upgrades": []},
+	      {"id": 536, "name": "XP Token", "pts": 20, "upgrades": []}
          ]}
+     
    ],
    "upgrades": [
     {"id": 17, "name": "Chaos Lord", "pts": 0},
@@ -64,11 +70,20 @@
 	  {"id": 72, "name": "3 Chaos Vindicators", "pts": 105}
    ],
    "formationConstraints": [
-    {"max": 1, "from": [552]},
-    {"max": 1, "name": "Spacecraft", "from": [533,534]},
-    {"maxPercent": 33, "name": "War Engines & Allies", "from": [520,521,522,523,530,531,533,534]},
-    {"max": 2, "name": "Support Formations", "from": [506,508,509,510], "forEach": [501], "name2": "Retinue" },
-	  {"max": 1, "name": "Elite Formation", "from": [503,551], "forEach": [501], "name2": "Retinue" }
+    {"min": 1, "max": 2, "from": [501,502,503,504,505,506,507]},
+	   {"max": 1, "from": [503,504]},
+	   {"max": 3, "from": [510,511,512,513]},
+    {"min": 2, "max": 6,  "from": [514,515]},
+	   {"max": 4,  "from": [516,517,518,519,520]},
+	   {"max": 1,  "from": [530]},
+	   {"max": 1,  "from": [531]},
+	   {"max": 1,  "from": [532]},
+	   {"max": 1,  "from": [533]},
+	   {"max": 3,  "from": [534]},
+	   {"max": 3,  "from": [535]},
+	   {"max": 3,  "from": [536]}
+    
+   
    ],
    "upgradeConstraints": [
 	  {"max": 1, "perArmy": true, "from": [20,21]},
