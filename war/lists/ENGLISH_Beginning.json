@@ -1,14 +1,14 @@
 {
-   "id": "Emperors Children",
-   "version": "Epic UK v070414",
+   "id": "English - Beginning of War (First Half)",
+   "version": "V1.0",
    "by": "Kyussinchains",
    "notes":["1) If Using Rhinos you must take exactly enough to carry all units in the formation after any upgrades have been added, to a maximum of 3. 2) 1 Dreadclaw must be purchased per unit in the formation. 3) both Rhinos and Dreadclaws count towards the upgrade allowance of a formation"],
    "sections": [
-      {"name": "CORE", "formations": [
+      {"name": "CHARACTER", "formations": [
             {"id": 501, "name": "Emperors Children Retinue", "pts": 275, "upgrades": [52,53,64,65,66,22,71,72,56,57,69,70,63,67,68,60,62,58]},
             {"id": 552, "name": "Daemon Pool", "pts": 0, "upgrades": [50,51]}
          ]},
-	  {"name": "ELITE", "formations": [
+	  {"name": "TROOP", "formations": [
             {"id": 503, "name": "Terminators", "pts": 400, "units": "4 Terminators", "upgrades": [52,56,57,69,70,63,67,68,60,53,64,65,66]},
             {"id": 551, "name": "Bike Company", "pts": 300, "units": "6 Emperors Children Bikes", "upgrades": [56]}
          ]}, 
