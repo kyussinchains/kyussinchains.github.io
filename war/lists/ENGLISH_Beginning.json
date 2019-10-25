@@ -19,12 +19,12 @@
 	    {"id": 512, "name": "Hunting Dogs", "pts": 75, "upgrades": []},
 	    {"id": 513, "name": "Bowmen", "pts": 125, "upgrades": []},
             {"id": 514, "name": "Pikemen", "pts": 60, "upgrades": []},
-	    {"id": 515, "name": "Provincial Militia", "pts": 35 "upgrades": []},
-		  {"id": 516, "name": "Foot Knights - 2-handed weapons", "pts": 145 "upgrades": []},
-		  {"id": 517, "name": "Foot Knights", "pts": 165 "upgrades": []},
-		  {"id": 518, "name": "Sergeants at arms - Gascons and Bretons", "pts": 125 "upgrades": []},
-		  {"id": 519, "name": "Standard Bearer", "pts": 230 "upgrades": []},
-		  {"id": 520, "name": "Musician", "pts": 200 "upgrades": []}
+	    {"id": 515, "name": "Provincial Militia", "pts": 35, "upgrades": []},
+		  {"id": 516, "name": "Foot Knights - 2-handed weapons", "pts": 145, "upgrades": []},
+		  {"id": 517, "name": "Foot Knights", "pts": 165, "upgrades": []},
+		  {"id": 518, "name": "Sergeants at arms - Gascons and Bretons", "pts": 125, "upgrades": []},
+		  {"id": 519, "name": "Standard Bearer", "pts": 230, "upgrades": []},
+		  {"id": 520, "name": "Musician", "pts": 200, "upgrades": []}
          ]}, 
       {"name": "RESOURCES", "choices": [
             {"id": 530, "name": "Order", "pts": 95,  "upgrades": []},
