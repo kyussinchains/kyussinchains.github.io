@@ -4,15 +4,16 @@
    "by": "Kyussinchains",
    
    "sections": [
-      {"name": "CHARACTERS", "choices": [
+      {"name": "CHARACTERS", "formations": [
             {"id": 501, "name": "Captal De Buch", "pts": 285, "upgrades": []},
-	      {"id": 502, "name": "Sir John Jouel", "pts": 205, "upgrades": []},
-	      {"id": 503, "name": "The Black Prince", "pts": 300, "upgrades": []},
-	      {"id": 504, "name": "Mounted Black Prince", "pts": 435, "upgrades": []},
-	      {"id": 505, "name": "John Chandos", "pts": 290, "upgrades": []},
-	      {"id": 506, "name": "Edward III", "pts": 385, "upgrades": []},	     
+	    {"id": 502, "name": "Sir John Jouel", "pts": 205, "upgrades": []},
+	    {"id": 503, "name": "The Black Prince", "pts": 300, "upgrades": []},
+	    {"id": 504, "name": "Mounted Black Prince", "pts": 435, "upgrades": []},
+	    {"id": 505, "name": "John Chandos", "pts": 290, "upgrades": []},
+	    {"id": 506, "name": "Edward III", "pts": 385, "upgrades": []},	     
             {"id": 507, "name": "Hero", "pts": 160, "upgrades": []}
          ]},
+	   
 	  {"name": "TROOP", "formations": [
             {"id": 510, "name": "Light Cavalry", "pts": 120, "upgrades": []},
             {"id": 511, "name": "Mounted Bowmen", "pts": 130, "upgrades": []},
@@ -20,45 +21,52 @@
 	    {"id": 513, "name": "Bowmen", "pts": 125, "upgrades": []},
             {"id": 514, "name": "Pikemen", "pts": 60, "upgrades": []},
 	    {"id": 515, "name": "Provincial Militia", "pts": 35, "upgrades": []},
-		  {"id": 516, "name": "Foot Knights - 2-handed weapons", "pts": 145, "upgrades": []},
-		  {"id": 517, "name": "Foot Knights", "pts": 165, "upgrades": []},
-		  {"id": 518, "name": "Sergeants at arms - Gascons and Bretons", "pts": 125, "upgrades": []},
-		  {"id": 519, "name": "Standard Bearer", "pts": 230, "upgrades": []},
-		  {"id": 520, "name": "Musician", "pts": 200, "upgrades": []}
+  	    {"id": 516, "name": "Foot Knights - 2-handed weapons", "pts": 145, "upgrades": []},
+	    {"id": 517, "name": "Foot Knights", "pts": 165, "upgrades": []},
+       	    {"id": 518, "name": "Sergeants at arms - Gascons and Bretons", "pts": 125, "upgrades": []},
+	    {"id": 519, "name": "Standard Bearer", "pts": 230, "upgrades": []},
+	    {"id": 520, "name": "Musician", "pts": 200, "upgrades": []}
          ]}, 
-      {"name": "RESOURCES", "choices": [
-            {"id": 530, "name": "Order", "pts": 95,  "upgrades": []},
-            {"id": 531, "name": "Charge Order", "pts": 110,  "upgrades": []},
-            {"id": 532, "name": "Interrupt Order", "pts": 120, "upgrades": []},
-            {"id": 533, "name": "Reactivation Order", "pts": 140,  "upgrades": []},
-	      {"id": 534, "name": "Legend Card", "pts": 20,  "upgrades": []},
-	      {"id": 535, "name": "Legend Token", "pts": 20, "upgrades": []},
-	      {"id": 536, "name": "XP Token", "pts": 20, "upgrades": []}
+	   
+      {"name": "RESOURCES", "formations": [
+            {"id": 530, "name": "Resources", "pts": 0,  "upgrades": [11,12,13,14,15,16,17]}
+           
          ]}
      
    ],
    "upgrades": [
-    		{ "id":11, "name":"Greater daemon ", "pts":50 },
-		{ "id":12, "name":"Lesser Daemon ", "pts":15 }
+    		{ "id":11, "name":"Standard Order", "pts":95 },
+		{ "id":12, "name":"Charge Order ", "pts":110 },
+	   	{ "id":13, "name":"Interrupt Order ", "pts":120 },
+	   	{ "id":14, "name":"Reactivation Order ", "pts":110 },
+	   	{ "id":15, "name":"Legend Card ", "pts":20 },
+	   	{ "id":16, "name":"Legend Token ", "pts":20 },
+	   	{ "id":17, "name":"XP Token ", "pts":20 }
    ],
    "formationConstraints": [
-    {"min": 1, "max": 2, "from": [501,502,503,504,505,506,507]},
-	   {"max": 1, "from": [503,504]},
-	   {"max": 3, "from": [510,511,512,513]},
-    {"min": 2, "max": 6,  "from": [514,515]},
-	   {"max": 4,  "from": [516,517,518,519,520]},
-	   {"max": 1,  "from": [530]},
-	   {"max": 1,  "from": [531]},
-	   {"max": 1,  "from": [532]},
-	   {"max": 1,  "from": [533]},
-	   {"max": 3,  "from": [534]},
-	   {"max": 3,  "from": [535]},
-	   {"max": 3,  "from": [536]}
+    		{"min": 1, "max": 2, "from": [501,502,503,504,505,506,507]},
+	   	{"max": 1, "from": [503,504]},
+	   	{"max": 3, "from": [510,511,512,513]},
+    		{"min": 2, "max": 6,  "from": [514,515]},
+	   	{"max": 4,  "from": [516,517,518,519,520]},
+	   	{"max": 1,  "from": [530]},
+	   	{"max": 1,  "from": [531]},
+	   	{"max": 1,  "from": [532]},
+	   	{"max": 1,  "from": [533]},
+	   	{"max": 3,  "from": [534]},
+	   	{"max": 3,  "from": [535]},
+	   	{"max": 3,  "from": [536]}
     
    
    ],
    "upgradeConstraints": [
-	 	{"max":1, "perArmy":true, "name":"Supreme Commander", "from":[15,32]},
-		{"min":1, "max":1, "from":[13,14,16,15,32], "appliesTo":[501,512,521,522,511]},
+	 	
+		{"max":1, "from":[11], "appliesTo":[530]},
+	   	{"max":1, "from":[12], "appliesTo":[530]},
+	   	{"max":1, "from":[13], "appliesTo":[530]},
+	   	{"max":1, "from":[14], "appliesTo":[530]},
+	   	{"max":3, "from":[15], "appliesTo":[530]},
+	   	{"max":3, "from":[16], "appliesTo":[530]},
+	   	{"max":3, "from":[17], "appliesTo":[530]}
    ]
 }
