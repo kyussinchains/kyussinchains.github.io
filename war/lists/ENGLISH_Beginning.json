@@ -48,9 +48,15 @@
    ],
    "formationConstraints": [
     		{"min": 1, "max": 1, "from": [501]},
-	   	{"max": 3, "from": [502,503,504,505,506,507]},
+	   	{"max": 3, "from": [510,511]},
+	   	{"max": 4, "from": [512]},
+	   	{"min": 3 "max": 6, "from": [513]},
 	   	{"min": 2, "max": 6, "from": [514,515]},
-		{"max": 4, "from": [516,517,518,519,520]}
+		{"max": 4, "from": [516,517]},
+	   	{"max": 4, "from": [518]},
+	   	{"max": 1, "from": [519]},
+	   	{"max": 1, "from": [520]}
+	   
    ],	   	
 
    "upgradeConstraints": [
@@ -63,10 +69,9 @@
 	   	{"max":3, "from":[16], "appliesTo":[530]},
 	   	{"max":3, "from":[17], "appliesTo":[530]},
 	   
-	   	{"max":1, "from":[20], "appliesTo":[501]},
+	   	{"max":1, "from":[20,24], "appliesTo":[501]},
 	   	{"max":1, "from":[21], "appliesTo":[501]},
 	   	{"max":1, "from":[22,23], "appliesTo":[501]},
-	   	{"max":1, "from":[24], "appliesTo":[501]},
 	   	{"max":1, "from":[25], "appliesTo":[501]},
 	   	{"max":2, "from":[26], "appliesTo":[501]},
 	   	{"min":1, "max":2, "from":[20,21,22,23,24,25,26], "appliesTo":[501]}
