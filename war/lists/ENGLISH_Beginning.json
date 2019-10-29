@@ -38,7 +38,8 @@
      
    ],
    "upgrades": [
-    
+    		{ "id":11, "name":"Greater daemon ", "pts":50 },
+		{ "id":12, "name":"Lesser Daemon ", "pts":15 }
    ],
    "formationConstraints": [
     {"min": 1, "max": 2, "from": [501,502,503,504,505,506,507]},
@@ -57,6 +58,7 @@
    
    ],
    "upgradeConstraints": [
-	 
+	 	{"max":1, "perArmy":true, "name":"Supreme Commander", "from":[15,32]},
+		{"min":1, "max":1, "from":[13,14,16,15,32], "appliesTo":[501,512,521,522,511]},
    ]
 }
