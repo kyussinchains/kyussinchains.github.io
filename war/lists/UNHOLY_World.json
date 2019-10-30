@@ -5,7 +5,7 @@
    
    "sections": [
       {"name": "CHARACTERS", "formations": [
-            {"id": 501, "name": "Characters", "pts": 0, "upgrades": [20,21]}
+            {"id": 501, "name": "Characters", "pts": 0, "upgrades": [20,21,22]}
 	    
          ]},
 	   
