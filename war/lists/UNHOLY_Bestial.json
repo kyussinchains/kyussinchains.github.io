@@ -1,0 +1,74 @@
+{
+   "id": "Unholy - Bestial Savagery (First+Second Half)",
+   "version": "V1.0",
+   "by": "Kyussinchains",
+   
+   "sections": [
+      {"name": "CHARACTERS", "formations": [
+            {"id": 501, "name": "Characters", "pts": 0, "upgrades": [20,21,22,23]}
+	    
+         ]},
+	   
+	  {"name": "TROOP", "formations": [
+      {"id": 510, "name": "War Hounds/Wolves", "pts": 0, "upgrades": [30,31]},
+      {"id": 511, "name": "Voracious Demons", "pts": 0, "upgrades": []},
+	    {"id": 512, "name": "Skeletons", "pts": 0, "upgrades": [33]}
+	    
+         ]}, 
+	   
+      {"name": "RESOURCES", "formations": [
+            {"id": 530, "name": "Resources", "pts": 0,  "upgrades": [11,13,14,15,16,17]}
+           
+         ]}
+     
+   ],
+   "upgrades": [
+      	{ "id":11, "name":"Standard Order", "pts":85 },
+		    { "id":13, "name":"Interrupt Order ", "pts":110 },
+	    	{ "id":14, "name":"Reactivation Order ", "pts":120 },
+	    	{ "id":15, "name":"Legend Card ", "pts":25 },
+	    	{ "id":16, "name":"Legend Token ", "pts":15 },
+	    	{ "id":17, "name":"XP Token ", "pts":20 },
+	   
+	    	{"id": 20, "name": "The Beast", "pts": 1110},
+	    	{"id": 21, "name": "The Tarasque", "pts": 475},
+        {"id": 22, "name": "The Werewolf", "pts": 145},
+        {"id": 23, "name": "The Cockatrice", "pts": 350},
+	    		   
+	  	  {"id": 30, "name": "War Hounds", "pts": 110},
+        {"id": 31, "name": "Wolves", "pts": 60},
+	      {"id": 32, "name": "Voracious Demons", "pts": 125},
+	      {"id": 33, "name": "Skeletons", "pts": 55}
+	      
+	   	
+   ],
+   "formationConstraints": [
+    		{"min": 1, "max": 1, "from": [501]},
+	   	  {"min": 1, "max": 1, "from": [510]},
+	   	  {"min": 1, "max": 1, "from": [511]},
+        {"max": 1, "from": [512]}	   	  
+	   
+   ],	   	
+
+   "upgradeConstraints": [
+	 	
+		  {"min": 2, "max":6, "from":[30,31], "appliesTo":[510]},
+	   	{"min": 2, "max":2, "from":[32], "appliesTo":[511]},
+	   	{"min": 0, "max":6, "from":[33], "appliesTo":[512]},
+	   		   		   
+	   	{"max":1, "from":[11], "appliesTo":[530]},
+	   
+	   	{"max":1, "from":[13], "appliesTo":[530]},
+	   	{"max":1, "from":[14], "appliesTo":[530]},
+	   	{"max":3, "from":[15], "appliesTo":[530]},
+	   	{"max":3, "from":[16], "appliesTo":[530]},
+	   	{"max":3, "from":[17], "appliesTo":[530]},
+	   
+	   	{"max":1, "from":[20], "appliesTo":[501]},
+      {"max":1, "from":[21], "appliesTo":[501]},
+      {"max":1, "from":[22], "appliesTo":[501]},
+      {"max":1, "from":[23], "appliesTo":[501]},
+      {"min":1, "max":2, "from":[20,21,22,23], "appliesTo":[501]}
+   ]
+			
+ }
