@@ -1,0 +1,79 @@
+{
+   "id": "Holy - Fantastic Allies (First+Second Half)",
+   "version": "V1.0",
+   "by": "Kyussinchains",
+   
+   "sections": [
+      {"name": "CHARACTERS", "formations": [
+            {"id": 501, "name": "Characters", "pts": 0, "upgrades": [20,21,22,23,24,25,26]}
+	    
+         ]},
+	   
+	  {"name": "TROOP", "formations": [
+            {"id": 510, "name": "Mounted Knights", "pts": 0, "upgrades": [30]},
+            {"id": 512, "name": "Bowmen (Short Bow)", "pts": 0, "upgrades": [31]},
+	          {"id": 513, "name": "Foot Knights/Foot Knights - 2-Handed Weapon", "pts": 0, "upgrades": [32,33]},
+            {"id": 514, "name": "Pikemen", "pts": 0, "upgrades": [34]}
+	          
+         ]}, 
+	   
+      {"name": "RESOURCES", "formations": [
+            {"id": 530, "name": "Resources", "pts": 0,  "upgrades": [11,12,13,14,15,16,17]}
+           
+         ]}
+     
+   ],
+   "upgrades": [
+    		    { "id":11, "name":"Standard Order", "pts":90 },
+		        { "id":12, "name":"Charge Order ", "pts":90 },
+	   	      { "id":13, "name":"Interrupt Order ", "pts":120 },
+	   	      { "id":14, "name":"Reactivation Order ", "pts":120 },
+	   	      { "id":15, "name":"Legend Card ", "pts":25 },
+	   	      { "id":16, "name":"Legend Token ", "pts":15 },
+	   	      { "id":17, "name":"XP Token ", "pts":15 },
+	   
+	    	    {"id": 20, "name": "Hero", "pts": 150},
+	    	    {"id": 21, "name": "Mounted Hero", "pts": 200},
+	    	    {"id": 22, "name": "The Griffin", "pts": 365},
+	    	    {"id": 23, "name": "The Unicorn", "pts": 250},
+	    	    
+	  	      {"id": 30, "name": "Mounted Knights", "pts": 145},
+            {"id": 31, "name": "Bowmen (Short Bow)", "pts": 140},
+	          {"id": 32, "name": "Foot Knights", "pts": 130},
+	          {"id": 33, "name": "Foot Knights - 2-Handed Weapons", "pts": 155},
+            {"id": 34, "name": "Pikemen", "pts": 65}
+	          
+	   
+	   	
+   ],
+   "formationConstraints": [
+    		    {"min": 1, "max": 1, "from": [501]},
+	   	      {"min": 1, "max": 1, "from": [510]},
+	   	      {"max": 1, "from": [512]},
+	   	      {"max": 1, "from": [513]},
+	   	      {"min": 1, "max": 1, "from": [514]}
+	   
+   ],	   	
+
+   "upgradeConstraints": [
+	 	
+		  {"min": 2, "max":2, "from":[30], "appliesTo":[510]},
+	   	{"min": 1, "max":4, "from":[32], "appliesTo":[512]},
+	   	{"min": 3, "max":6, "from":[33], "appliesTo":[513]},
+	   	{"min": 3, "max":6, "from":[34,35], "appliesTo":[514]},
+	   		   
+	   	{"max":1, "from":[11], "appliesTo":[530]},
+	   	{"max":1, "from":[12], "appliesTo":[530]},
+	   	{"max":1, "from":[13], "appliesTo":[530]},
+	   	{"max":1, "from":[14], "appliesTo":[530]},
+	   	{"max":3, "from":[15], "appliesTo":[530]},
+	   	{"max":3, "from":[16], "appliesTo":[530]},
+	   	{"max":3, "from":[17], "appliesTo":[530]},
+	   
+	   	{"min":1, "max":2, "from":[20,21], "appliesTo":[501]},
+	   	{"max":1, "from":[20], "appliesTo":[501]},
+	   	{"max":1, "from":[21], "appliesTo":[501]}
+	   	
+   ]
+			
+ }
