@@ -1,0 +1,83 @@
+{
+   "id": "Unholy - Faithless Looters (First+Second Half)",
+   "version": "V1.0",
+   "by": "Kyussinchains",
+   
+   "sections": [
+      {"name": "CHARACTERS", "formations": [
+            {"id": 501, "name": "Characters", "pts": 0, "upgrades": [20,21]}
+	    
+         ]},
+	   
+	  {"name": "TROOP", "formations": [
+      {"id": 510, "name": "Skeletons/Demonic Skeletons", "pts": 0, "upgrades": [30,31]},
+      {"id": 511, "name": "Heretics", "pts": 0, "upgrades": []},
+	    {"id": 512, "name": "Demonic Legion", "pts": 0, "upgrades": [33]},
+      {"id": 513, "name": "Flying Demons", "pts": 0, "upgrades": [34]},
+	    {"id": 514, "name": "Voracious Demons", "pts": 0, "upgrades": [35]},
+	    {"id": 515, "name": "Provincial Militia", "pts": 0, "upgrades": [36]}
+	    
+         ]}, 
+	   
+      {"name": "RESOURCES", "formations": [
+            {"id": 530, "name": "Resources", "pts": 0,  "upgrades": [11,13,14,15,16,17]}
+           
+         ]}
+     
+   ],
+   "upgrades": [
+    	{ "id":11, "name":"Standard Order", "pts":90 },
+		  { "id":13, "name":"Interrupt Order ", "pts":115 },
+	   	{ "id":14, "name":"Reactivation Order ", "pts":120 },
+	   	{ "id":15, "name":"Legend Card ", "pts":20 },
+	   	{ "id":16, "name":"Legend Token ", "pts":15 },
+	   	{ "id":17, "name":"XP Token ", "pts":20 },
+	   
+	    	{"id": 20, "name": "The Devil", "pts": 1165},
+	    	{"id": 21, "name": "The Witch", "pts": 145},
+	    		   
+	  	  {"id": 30, "name": "Skeletons", "pts": 55},
+        {"id": 31, "name": "Demonic Skeletons", "pts": 75},
+	      {"id": 32, "name": "Heretics", "pts": 90},
+	      {"id": 33, "name": "Demonic Legion", "pts": 65},
+        {"id": 34, "name": "Flying Demons", "pts": 75},
+	      {"id": 35, "name": "Voracious Demons", "pts": 195},
+  	    {"id": 36, "name": "Provincial Militia", "pts": 35}
+	      
+	   	
+   ],
+   "formationConstraints": [
+    		{"min": 1, "max": 1, "from": [501]},
+	   	  {"max": 1, "from": [510]},
+	   	  {"min": 1, "max": 1, "from": [511]},
+        {"min": 1, "max": 1, "from": [512]},
+	   	  {"max": 1, "from": [513]},
+	   	  {"max": 1, "from": [514]},
+		    {"max": 1, "from": [515]}
+	   	  
+	   
+   ],	   	
+
+   "upgradeConstraints": [
+	 	
+		  {"min": 1, "max":4, "from":[30,31], "appliesTo":[510]},
+	   	{"min": 1, "max":1, "from":[32], "appliesTo":[511]},
+	   	{"min": 2, "max":3, "from":[33], "appliesTo":[512]},
+	   	{"min": 1, "max":3, "from":[34], "appliesTo":[513]},
+	   	{"min": 1, "max":2, "from":[35], "appliesTo":[514]},
+	   	{"min": 1, "max":4, "from":[36], "appliesTo":[515]},
+	   		   
+	   	{"max":1, "from":[11], "appliesTo":[530]},
+	   	{"max":1, "from":[12], "appliesTo":[530]},
+	   	{"max":1, "from":[13], "appliesTo":[530]},
+	   	{"max":1, "from":[14], "appliesTo":[530]},
+	   	{"max":3, "from":[15], "appliesTo":[530]},
+	   	{"max":3, "from":[16], "appliesTo":[530]},
+	   	{"max":3, "from":[17], "appliesTo":[530]},
+	   
+	   	{"max":1, "from":[20], "appliesTo":[501]},
+      {"max":1, "from":[21], "appliesTo":[501]},
+      {"min":1, "max":2, "from":[20,21], "appliesTo":[501]}
+   ]
+			
+ }
