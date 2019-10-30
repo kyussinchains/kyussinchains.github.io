@@ -15,7 +15,7 @@
 	    {"id": 512, "name": "Ghosts", "pts": 0, "upgrades": [33]},
       {"id": 513, "name": "Skeletons Danse Macabre", "pts": 0, "upgrades": [34]},
 	    {"id": 514, "name": "Flying Demons", "pts": 0, "upgrades": [35]},
-	    {"id": 515, "name": "Disciples", "pts": 0, "upgrades": [36]}
+	    {"id": 515, "name": "Disciples", "pts": 0, "upgrades": []}
 	    
          ]}, 
 	   
