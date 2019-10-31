@@ -41,7 +41,7 @@
 			{"id":520, "name":"Nightwings",						"pts":300, "units":"3 Nightwing Interceptors"},
 			{"id":521, "name":"Phoenix Bombers",					"pts":325, "units":"3 Phoenix Bombers"},
 			{"id":522, "name":"Vampire Raider",					"pts":200}
-		]}
+		]},
 		{"name":"SPACESHIPS, AIRCRAFT & TITANS", "formations":[
 			{"id":900, "name":"Wraithship",						"pts":150},
 			{"id":901, "name":"Dragonship",						"pts":300},
