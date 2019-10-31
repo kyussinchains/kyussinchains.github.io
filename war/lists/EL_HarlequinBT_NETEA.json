@@ -35,13 +35,19 @@
 			{"id":505, "name":"Engines of Vaul Troupe",			"pts":0, "upgrades":[34,35,36,37]}
 		]},
 
-
 		{"name":"SPACESHIPS, AIRCRAFT & TITANS", "formations":[
 			{"id":515, "name":"Wraithship",						"pts":150},
 			{"id":516, "name":"Dragonship",						"pts":300},
 			{"id":520, "name":"Nightwings",						"pts":300, "units":"3 Nightwing Interceptors"},
 			{"id":521, "name":"Phoenix Bombers",					"pts":325, "units":"3 Phoenix Bombers"},
 			{"id":522, "name":"Vampire Raider",					"pts":200}
+		]}
+		{"name":"SPACESHIPS, AIRCRAFT & TITANS", "formations":[
+			{"id":900, "name":"Wraithship",						"pts":150},
+			{"id":901, "name":"Dragonship",						"pts":300},
+			{"id":902, "name":"Nightwings",						"pts":300, "units":"3 Nightwing Interceptors"},
+			{"id":903, "name":"Phoenix Bombers",					"pts":325, "units":"3 Phoenix Bombers"},
+			{"id":904, "name":"Vampire Raider",					"pts":200}
 		]}
 
 
@@ -95,7 +101,8 @@
 		{"max":1, "name":"Spacecraft", "perArmy":true, "from":[515,516]},
 		{"max":3, "name":"Troupes", "from":[500,501,502,503,504,505,530], "forEach":[510,511,512], "name2":"Warhost"},
 		{"max":2, "name":"Harlequin Troupes", "from":[801,802,803], "forEach":[701], "name2":"Harlequin Warhost"},
-		{"maxPercent":33, "name":"Aircraft & Titans", "from":[515,516,517,518,519,520,521,522]}
+		{"maxPercent":33, "name":"Aircraft & Titans", "from":[515,516,517,518,519,520,521,522]},
+		{"maxPercent":100, "name":"Aircraft & Titans", "from":[900,901,902,903,904]}
 	],
 	"upgradeConstraints":[
 		{"max":2, "name":"Exarch", "from":[39,40]},
