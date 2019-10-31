@@ -10,7 +10,7 @@
          ]},
 	   
 	  {"name": "TROOP", "formations": [
-            {"id": 510, "name": "Cannon, "pts": 0, "upgrades": [30]},
+            {"id": 510, "name": "Cannon", "pts": 0, "upgrades": [30]},
             {"id": 512, "name": "Siphai", "pts": 0, "upgrades": [31]},
 	    {"id": 513, "name": "Janissaries/Yerli Kulu", "pts": 0, "upgrades": [32,33]},
             {"id": 514, "name": "Okchus/Azab Archers", "pts": 0, "upgrades": [34,35]},
